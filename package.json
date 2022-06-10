@@ -1,0 +1,56 @@
+{
+  "name": "vue-template",
+  "version": "1.0.0",
+  "description": "A vue template for A2ayak-Cli",
+  "main": "index.js",
+  "scripts": {
+    "serve": "cross-env NODE_ENV=development webpack serve --progress",
+    "build": "cross-env NODE_ENV=production webpack --progress",
+    "checklint": "eslint --ext .js,.vue,.ts .",
+    "reviselint": "eslint --fix --ext .js,.vue,.ts ."
+  },
+  "keywords": [],
+  "author": "A2ayak",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-typescript": "^7.17.12",
+    "@types/webpack-env": "^1.17.0",
+    "@typescript-eslint/eslint-plugin": "^5.27.1",
+    "@typescript-eslint/parser": "^5.27.1",
+    "@vue/compiler-sfc": "^3.2.37",
+    "babel-loader": "^8.2.5",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.17.0",
+    "eslint-plugin-vue": "^9.1.0",
+    "eslint-webpack-plugin": "^3.1.1",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "postcss-loader": "^7.0.0",
+    "postcss-preset-env": "^7.7.1",
+    "sass": "^1.52.2",
+    "sass-loader": "^13.0.0",
+    "style-loader": "^3.3.1",
+    "svg-sprite-loader": "^6.0.11",
+    "svgo-loader": "^3.0.0",
+    "typescript": "^4.7.3",
+    "vue-loader": "^17.0.0",
+    "webpack": "^5.73.0",
+    "webpack-bundle-analyzer": "^4.5.0",
+    "webpack-chain": "^6.5.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.2"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "vue": "^3.2.36"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ]
+}
