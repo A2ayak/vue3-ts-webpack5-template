@@ -7,7 +7,7 @@ const { VueLoaderPlugin } = require('vue-loader')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const ESLintPlugin = require('eslint-webpack-plugin')
 
-const Config  = require('webpack-chain')
+const Config = require('webpack-chain')
 const config = new Config()
 
 const resolve = dir => path.join(__dirname, dir)
@@ -22,9 +22,9 @@ config.output
 
 config.resolve
   .alias
-  .set('@',resolve('src'))
-  .set('@style',resolve('src/styles'))
-  .set('@components',resolve('src/components'))
+  .set('@', resolve('src'))
+  .set('@style', resolve('src/styles'))
+  .set('@components', resolve('src/components'))
   .end()
   .extensions
   .add('.ts')
