@@ -1,6 +1,6 @@
 {
-  "cSpell.words": [
-    "ayak",
-    "browserslist"
-  ]
+  "cSpell.words": ["ayak", "browserslist"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }

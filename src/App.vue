@@ -22,19 +22,18 @@ export default defineComponent({
       console.log('3.-组件挂载到页面之后执行-------onMounted')
     })
     return {
-      ...toRefs(data),
+      ...toRefs(data)
     }
   }
 })
-
 </script>
-<style scoped lang='scss'>
-  div {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-  }
+<style scoped lang="scss">
+div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
 </style>

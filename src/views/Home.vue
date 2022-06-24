@@ -15,17 +15,17 @@ export default defineComponent({
       console.log('2.组件挂载页面之前执行----onBeforeMount')
     })
     onMounted(() => {
+      const a = 'asd'
       console.log('3.-组件挂载到页面之后执行-------onMounted')
     })
     return {
-      ...toRefs(data),
+      ...toRefs(data)
     }
   }
 })
-
 </script>
-<style scoped lang='scss'>
-  div {
-    background-color: #fff;
-  }
+<style scoped lang="scss">
+div {
+  background-color: #fff;
+}
 </style>
