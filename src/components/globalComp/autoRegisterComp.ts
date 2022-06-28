@@ -8,10 +8,10 @@ const requireComponent = require.context(
 )
 
 export default {
-  install (Vue: App) {
-    requireComponent.keys().forEach(fileName => {
+  install(Vue: App) {
+    requireComponent.keys().forEach((fileName) => {
       console.log(fileName)
-      
+
       const componentConfig = requireComponent(fileName)
       const componentName = fileName.replace(/^\.\//, '').replace(/\.\w+$/, '')
       Vue.component(componentName, componentConfig.default || componentConfig)

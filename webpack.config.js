@@ -119,7 +119,7 @@ config.module.rule('svg')
   })
 
 config.plugin('HtmlWebpackPlugin').use(HtmlWebpackPlugin, [
-  { title: 'vue-template', template: './index.html' }
+  { title: 'vue3-template', template: './index.html' }
 ])
 config.plugin('VueLoaderPlugin').use(VueLoaderPlugin)
 

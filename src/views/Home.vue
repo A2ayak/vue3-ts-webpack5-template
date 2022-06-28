@@ -6,6 +6,7 @@
 
 <script lang="ts">
 import { reactive, toRefs, onBeforeMount, onMounted, defineComponent } from 'vue'
+
 export default defineComponent({
   name: '',
   setup() {
@@ -15,9 +16,9 @@ export default defineComponent({
       console.log('2.组件挂载页面之前执行----onBeforeMount')
     })
     onMounted(() => {
-      const a = 'asd'
       console.log('3.-组件挂载到页面之后执行-------onMounted')
     })
+
     return {
       ...toRefs(data)
     }

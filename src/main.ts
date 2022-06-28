@@ -6,6 +6,8 @@ import 'normalize.css/normalize.css'
 import '@/styles/index.scss'
 import '@/assets/index.js'
 
-createApp(App).use(plugin, {
-  imports: []
-}).mount('#app')
+createApp(App)
+  .use(plugin, {
+    imports: []
+  })
+  .mount('#app')
